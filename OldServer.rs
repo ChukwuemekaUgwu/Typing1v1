@@ -4,8 +4,8 @@ use tokio::io::{AsyncReadExt, AsyncWriteExt};
 
 #[tokio::main]
 async fn main() {
-    let listener = TcpListener::bind("127.0.0.1:8888").await.unwrap();
-    println!("Server started at 127.0.0.1:8888");
+    let listener = TcpListener::bind("100.110.208.117").await.unwrap();
+    println!("Server started at 100.110.208.117");
 
     loop {
         let (client_a, _) = listener.accept().await.unwrap();
